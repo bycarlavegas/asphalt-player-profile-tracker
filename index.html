@@ -26,7 +26,7 @@
     <div class="profile-content">
       <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
       <div class="profile-info">
-        <h1><i>Yonary</i><button>u-d7d615</button></h1>
+        <h1><i>Yonary</i><button><b>u-d7d615</b></button></h1>
         <p>
           <i><b>LV 40</b></i>
           <span><icon class="bi bi-car-front-fill"></icon><i>203</i></span>
@@ -41,7 +41,7 @@
     
     <section id="last-race">
       <h3><i>LAST RACE</i></h3>
-        <table>
+        <table class="win-race">
             <colgroup>
               <col style="width: 10%;">
               <col style="width: 10%;">
@@ -50,7 +50,9 @@
               <col style="width: 10%;">
               <col style="width: 10%;">
             </colgroup>
+            <thead>
             <tr><th>Mode</th><th>Position</th><th>Track</th><th>Car</th><th>Time</th><th>Date</th></tr>
+            </thead>
             <tbody>
               <tr>
                 <td>Special Event</td>
@@ -77,24 +79,29 @@
       <thead>
         <tr>
           <th>Track</th>
+          <th>Races</th>
           <th>Win %</th>
         </tr>
       </thead>
       <tbody>
         <tr style="background-image: url('assets/shanghai.png');">
           <td>Shanghai</td>
+          <td>96</td>
           <td>84%</td>
         </tr>
         <tr style="background-image: url('assets/himalayas.png');">
           <td>Himalayas</td>
+          <td>50</td>
           <td>76%</td>
         </tr>
         <tr style="background-image: url('assets/san-francisco.png');">
           <td>San Franciso</td>
+          <td>74</td>
           <td>72%</td>
         </tr>
         <tr style="background-image: url('assets/rome.png');">
           <td>Rome</td>
+          <td>48</td>
           <td>65%</td>
         </tr>
       </tbody>
@@ -127,7 +134,7 @@
             </div>
           </td>
           <td>35</td>
-          <td>80</td>
+          <td class="gold">80</td>
           <td class="purple">86%</td>
         </tr>
         <tr>
@@ -138,7 +145,7 @@
             </div>
           </td>
           <td>113</td>
-          <td>79</td>
+          <td class="gold">79</td>
           <td class="purple">70%</td>
         </tr>
         <tr>
@@ -149,7 +156,7 @@
             </div>
           </td>
           <td>60</td>
-          <td>38</td>
+          <td class="gold">38</td>
           <td class="purple">63%</td>
         </tr>
         <tr>
@@ -160,7 +167,7 @@
             </div>
           </td>
           <td>52</td>
-          <td>25</td>
+          <td class="gold">25</td>
           <td class="purple">48%</td>
         </tr>
       </tbody>
@@ -181,9 +188,11 @@
           <col style="width: 10%;">
           <col style="width: 10%;">
         </colgroup>
+        <thead>
         <tr>
           <th>Car</th><th>Class</th><th>Type</th><th>Rank</th><th>Top Speed</th><th>Acceleration</th><th>Handling</th><th>Nitro</th>
         </tr>
+        </thead>
         <tr>
           <td>
             <div class="car-cell">
@@ -247,339 +256,263 @@
       </table>
     </section>
 
-    <section call="racing-details-table" id="race-history">
-      <h3><i>RACE HISTORY</i></h3>
-      <!--<table>
-        <colgroup>
-          <col style="width: 10%;">
-          <col style="width: 10%;">
-          <col style="width: 12%;">
-          <col style="width: 15%;">
-          <col style="width: 10%;">
-          <col style="width: 10%;">
-        </colgroup>
-          <tr>
-            <th>Mode</th><th>Position</th><th>Track</th><th>Car</th><th>Time</th><th>Date</th>
-          </tr>
-        </table>-->  
-        <details class="racing-details">
-        <summary>
-          <table class="win-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Special Event</td>
-                <td class="gold">1st</td>
-                <td>Nevada<br>Desert Run</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/koenigsegg-jesko.png" alt="Koenigsegg Jesko">
-                    <span>Koenigsegg Jesko</span>
-                  </div>
-                </td>
-                <td>01:11</td>
-                <td>2025-08-02<br>20:30</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        <table class="table-details">
-          <tr>
-            <th>Drift (m)</th><th>Position</th><th>Track</th><th>Car</th><th>Time</th><th>Date</th>
-          </tr>
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Special Event</td>
-                <td class="gold">1st</td>
-                <td>Nevada<br>Desert Run</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/koenigsegg-jesko.png" alt="Koenigsegg Jesko">
-                    <span>Koenigsegg Jesko</span>
-                  </div>
-                </td>
-                <td>01:11</td>
-                <td>2025-08-02<br>20:30</td>
-              </tr>
-            </tbody>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="lose-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Multiplayer</td>
-                <td>6th</td>
-                <td>Scotland<br>Ancient Ruins</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/bugatti-chiron.png" alt="Bugatti Chiron">
-                    <span>Bugatti Chiron</span>
-                  </div>
-                </td>
-                <td>01:20</td>
-                <td>2025-08-02<br>20:22</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="win-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Special Event</td>
-                <td class="bronce">3rd</td>
-                <td>San Diego<br>Harbor Run</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/lamborghini-veneno.png" alt="Lamborghini Veneno">
-                    <span>Lamborghini Veneno</span>
-                  </div>
-                </td>
-                <td>01:24</td>
-                <td>2025-08-02<br>20:15</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="lose-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Multiplayer</td>
-                <td>4th</td>
-                <td>Osaka<br>Kita Run</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/ferrari-laferrari.png" alt="Ferrari LaFerrari">
-                    <span>Ferrari LaFerrai</span>
-                  </div>
-                </td>
-                <td>01:03</td>
-                <td>2025-08-02<br>19:58</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="win-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Special Event</td>
-                <td class="gold">1st</td>
-                <td>San Francisco<br>Tunnel Jam</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/koenigsegg-jesko.png" alt="Koenigsegg Jesko">
-                    <span>Koenigsegg Jesko</span>
-                  </div>
-                </td>
-                <td>01:18</td>
-                <td>2025-08-01<br>21:05</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="win-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Multiplayer</td>
-                <td class="gold">1st</td>
-                <td>Himalayas<br>Cliffhanger</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/bugatti-chiron.png" alt="Bugatti Chiron">
-                    <span>Bugatti Chiron</span>
-                  </div>
-                </td>
-                <td>01:12</td>
-                <td>2025-08-01<br>20:42</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="win-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Special Event</td>
-                <td class="silver">2nd</td>
-                <td>Shanghai<br>Shen City</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/ferrari-laferrari.png" alt="Ferrari LaFerrari">
-                    <span>Ferrari LaFerrari</span>
-                  </div>
-                </td>
-                <td>01:15</td>
-                <td>2025-08-01<br>20:36</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="lose-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Multiplayer</td>
-                <td>5th</td>
-                <td>Rome<br>Ancient Rome</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/lamborghini-veneno.png" alt="Lamborghini Veneno">
-                    <span>Lamborghini Veneno</span>
-                  </div>
-                </td>
-                <td>01:27</td>
-                <td>2025-08-01<br>20:21</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="win-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Multiplayer</td>
-                <td class="gold">1th</td>
-                <td>Auckland<br>Starting Grid</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/koenigsegg-jesko.png" alt="Koenigsegg Jesko">
-                    <span>Koenigsegg Jesko</span>
-                  </div>
-                </td>
-                <td>01:05</td>
-                <td>2025-08-01<br>20:13</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-        <details class="racing-details">
-        <summary>
-          <table class="win-race">
-            <colgroup>
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-              <col style="width: 12%;">
-              <col style="width: 15%;">
-              <col style="width: 10%;">
-              <col style="width: 10%;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>Special Event</td>
-                <td class="bronce">3rd</td>
-                <td>Paris<br>Arc de Triomphe</td>
-                <td>
-                  <div class="car-cell-history">
-                    <img src="assets/bugatti-chiron.png" alt="Bugatti Chiron">
-                    <span>Bugatti Chiron</span>
-                  </div>
-                </td>
-                <td>01:08</td>
-                <td>2025-08-01<br>19:58</td>
-              </tr>
-            </tbody>
-          </table>
-        </summary>
-        </details>
-    </section>
+    <section class="racing-details-table" id="race-history">
+    <h3><i>RACE HISTORY</i></h3>
+  
+  <table class="win-race">
+    <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>Special Event</td>
+        <td class="gold">1st</td>
+        <td>Nevada<br>Desert Run</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/koenigsegg-jesko.png" alt="Koenigsegg Jesko">
+            <span>Koenigsegg Jesko</span>
+          </div>
+        </td>
+        <td>01:11</td>
+        <td>2025-08-02<br>20:30</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="lose-race">
+    <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>Multiplayer</td>
+        <td>6th</td>
+        <td>Scotland<br>Ancient Ruins</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/bugatti-chiron.png" alt="Bugatti Chiron">
+            <span>Bugatti Chiron</span>
+          </div>
+        </td>
+        <td>01:20</td>
+        <td>2025-08-02<br>20:22</td>
+      </tr>
+      </tbody>
+    </table>
+    <table class="win-race">
+    <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+    </colgroup>
+    <tbody> 
+      <tr>
+        <td>Special Event</td>
+        <td class="bronce">3rd</td>
+        <td>San Diego<br>Harbor Run</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/lamborghini-veneno.png" alt="Lamborghini Veneno">
+            <span>Lamborghini Veneno</span>
+          </div>
+        </td>
+        <td>01:24</td>
+        <td>2025-08-02<br>20:15</td>
+      </tr>
+      </tbody>
+      </table>
+      <table class="lose-race">
+      <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Multiplayer</td>
+        <td>4th</td>
+        <td>Osaka<br>Kita Run</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/ferrari-laferrari.png" alt="Ferrari LaFerrari">
+            <span>Ferrari LaFerrari</span>
+          </div>
+        </td>
+        <td>01:03</td>
+        <td>2025-08-02<br>19:58</td>
+      </tr>
+      </tbody>
+      </table>
+      <table class="win-race">
+      <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Special Event</td>
+        <td class="gold">1st</td>
+        <td>San Francisco<br>Tunnel Jam</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/koenigsegg-jesko.png" alt="Koenigsegg Jesko">
+            <span>Koenigsegg Jesko</span>
+          </div>
+        </td>
+        <td>01:18</td>
+        <td>2025-08-01<br>21:05</td>
+      </tr>
+      </tbody>
+      </table>
+      <table class="win-race">
+      <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Multiplayer</td>
+        <td class="gold">1st</td>
+        <td>Himalayas<br>Cliffhanger</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/bugatti-chiron.png" alt="Bugatti Chiron">
+            <span>Bugatti Chiron</span>
+          </div>
+        </td>
+        <td>01:12</td>
+        <td>2025-08-01<br>20:42</td>
+      </tr>
+      </tbody>
+      </table>
+      <table class="win-race">
+      <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Special Event</td>
+        <td class="silver">2nd</td>
+        <td>Shanghai<br>Shen City</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/ferrari-laferrari.png" alt="Ferrari LaFerrari">
+            <span>Ferrari LaFerrari</span>
+          </div>
+        </td>
+        <td>01:15</td>
+        <td>2025-08-01<br>20:36</td>
+      </tr>
+      </tbody>
+      </table>
+      <table class="lose-race">
+      <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Multiplayer</td>
+        <td>5th</td>
+        <td>Rome<br>Ancient Rome</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/lamborghini-veneno.png" alt="Lamborghini Veneno">
+            <span>Lamborghini Veneno</span>
+          </div>
+        </td>
+        <td>01:27</td>
+        <td>2025-08-01<br>20:21</td>
+      </tr>
+      </tbody>
+      </table>
+      <table class="win-race">
+      <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Multiplayer</td>
+        <td class="gold">1st</td>
+        <td>Auckland<br>Starting Grid</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/koenigsegg-jesko.png" alt="Koenigsegg Jesko">
+            <span>Koenigsegg Jesko</span>
+          </div>
+        </td>
+        <td>01:05</td>
+        <td>2025-08-01<br>20:13</td>
+      </tr>
+      </tbody>
+      </table>
+      <table class="win-race">
+      <colgroup>
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      <col style="width: 12%;">
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 10%;">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>Special Event</td>
+        <td class="bronce">3rd</td>
+        <td>Paris<br>Arc de Triomphe</td>
+        <td>
+          <div class="car-cell-history">
+            <img src="assets/bugatti-chiron.png" alt="Bugatti Chiron">
+            <span>Bugatti Chiron</span>
+          </div>
+        </td>
+        <td>01:08</td>
+        <td>2025-08-01<br>19:58</td>
+      </tr>
+      </tbody>
+      </table>
+    </tbody>
+  </table>
+</section>
+
 
   </div>
 
