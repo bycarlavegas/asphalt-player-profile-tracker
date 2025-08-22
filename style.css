@@ -414,3 +414,26 @@ section {
     transform: translateY(0);
   }
 }
+
+media (max-width: 768px) {
+  .stats-section {
+    grid-template-columns: 1fr;
+    min-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .top-bar,
+  .button-bar,
+  .banner,
+  .win-race,
+  .lose-race,
+  .top-cars,
+  .top-tracks,
+  .top-cars-stats-table,
+  .table {
+    max-width: 768px;
+    min-width: 500px;
+    font-size: 10px;
+    overflow-x: auto;
+  }
+}
