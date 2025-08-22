@@ -415,12 +415,13 @@ section {
   }
 }
 
-media (max-width: 768px) {
+@media (max-width: 768px) {
   .stats-section {
     grid-template-columns: 1fr;
     min-width: 500px;
   }
 }
+
 @media (max-width: 768px) {
   .top-bar,
   .button-bar,
