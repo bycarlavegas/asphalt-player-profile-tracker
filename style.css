@@ -56,10 +56,9 @@ body{
 
 .button-bar button {
   padding: 8px 15px;
-  border-radius: 20px;
-  background-color: #2a2a40;
+  background: linear-gradient(0deg, #ffc400, #ffe554);
   border: 0px;
-  color: #fff;
+  color: #121212;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -67,12 +66,13 @@ body{
 
 .button-bar a{
     text-decoration: none;
-    color: #fff;
+    color: #121212;
 }
 
 .button-bar button:hover {
-  background-color: #dbb32e;
-  color: #000;
+  background: linear-gradient(0deg, #ffc400, #ffe554);
+  box-shadow: 0 0 10px #fdd349;
+  transform: scale(1.05);
 }
 
 .banner{
@@ -86,7 +86,7 @@ body{
     background-position: center;
     border-radius: 10px;
     position: relative;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .profile-content{
@@ -117,14 +117,15 @@ body{
     font-size: 12px;
     margin-left: 15px;
     padding: 5px;
-    background-color: #dbb32e;
+    background: linear-gradient(0deg, #ffc400, #ffe554);
     color: #121212;
     border-width: 0px;
     vertical-align: middle;
 }
 
 .profile-info button:hover{
-  box-shadow: 0 0 10px #dbb32e, 0 0 20px #dbb32e, 0 0 30px #dbb32e;
+  background: linear-gradient(0deg, #ffc400, #ffe554);
+  box-shadow: 0 0 10px #fdd349;
   transform: scale(1.05);
 }
 
@@ -137,6 +138,7 @@ body{
     margin: 5px;
     color: #dbb32e;
 }
+
 
 .player-profile{
     max-width: 1200px;
@@ -386,10 +388,12 @@ summary{
 
 .win-race {
   border: 1px solid #44d63f46;
+  background-color: #1e2f1e79;
 }
 
 .lose-race {
     border: 1px solid #d63f3f46;
+    background-color: #2f1e1e7c;
 }
 
 .race-history-row:hover {
@@ -436,5 +440,6 @@ section {
     min-width: 500px;
     font-size: 10px;
     overflow-x: auto;
+    margin-left: -5px;;
   }
 }
